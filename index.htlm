@@ -1,2 +1,30 @@
-# Majo2760.github.io
-Project 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paul Fisher - Tangerine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Paul Fisher</h1>
+    <img src="https://cdn.pixabay.com/photo/2020/12/11/18/29/boy-5824401_1280.png" alt="Paul Fisher" />
+    <h2>Character from <em>Tangerine</em> by Edward Bloor</h2>
+
+    <div class="info">
+      <p><strong>Full Name:</strong> Paul Fisher</p>
+      <p><strong>Age:</strong> 12 years old</p>
+      <p><strong>Lives in:</strong> Lake Windsor Downs, Florida</p>
+      <p><strong>Family:</strong> Lives with his parents and his older brother Erik</p>
+      <p><strong>School:</strong> Tangerine Middle School</p>
+      <p><strong>Likes:</strong> Soccer, honesty, and helping his friends</p>
+      <p><strong>Goal:</strong> To be brave and see the truth about his life</p>
+    </div>
+
+    <div class="quote">
+      <p>“I can see things other people can’t.”</p>
+    </div>
+  </div>
+</body>
+</html>
