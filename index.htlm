@@ -1,151 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paul Fisher - Tangerine</title>
-  <style>
-    /* Fondo con degradado pastel animado */
-    body {
-      background: linear-gradient(135deg, #fde2e4, #fad2e1, #e2ece9, #bee1e6);
-      background-size: 400% 400%;
-      animation: gradientMove 10s ease infinite;
-      font-family: "Poppins", sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
-      margin: 0;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paul Fisher</title>
+<style>
+  body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(120deg, #fde2e4, #bee1e6, #cddafd, #d8e2dc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 
-    @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+  .card {
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 370px;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+  }
 
-    .card {
-      background-color: #ffffffcc;
-      border-radius: 25px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      width: 380px;
-      text-align: center;
-      padding: 25px;
-      border: 3px solid #f4b6c2;
-      transition: transform 0.3s;
-    }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
 
-    .card:hover {
-      transform: scale(1.03);
-    }
+  h1 {
+    color: #ef476f;
+    margin-bottom: 5px;
+  }
 
-    .header h1 {
-      color: #f08a8a;
-      font-size: 28px;
-      margin-bottom: 5px;
-    }
+  h2 {
+    color: #6c757d;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
 
-    .header h2 {
-      color: #94a3b8;
-      font-size: 16px;
-      margin-bottom: 15px;
-    }
+  img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #ffc8dd;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
 
-    img {
-      width: 150px;
-      border-radius: 50%;
-      border: 5px solid #fad2e1;
-      margin-bottom: 15px;
-      transition: transform 0.5s;
-    }
+  .info {
+    margin-top: 20px;
+    background: #fff0f5;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 14px;
+    color: #444;
+  }
 
-    img:hover {
-      transform: rotate(-5deg) scale(1.05);
-    }
+  .info strong {
+    color: #ef476f;
+  }
 
-    .info {
-      background: #fdf6f9;
-      border-radius: 15px;
-      padding: 15px;
-      margin-bottom: 15px;
-      border: 1px solid #f4b6c2;
-    }
+  .quote {
+    margin: 20px 0;
+    font-style: italic;
+    color: #6c757d;
+    background: #e3d5ca;
+    border-radius: 15px;
+    padding: 10px;
+  }
 
-    .info p {
-      color: #555;
-      font-size: 14px;
-      line-height: 1.5;
-      margin: 6px 0;
-    }
+  .btn {
+    background: linear-gradient(90deg, #ffc8dd, #bde0fe);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #444;
+    transition: 0.3s;
+  }
 
-    .quote {
-      background: #fce7f3;
-      border-radius: 15px;
-      padding: 12px;
-      margin-top: 15px;
-      border: 1px dashed #f4b6c2;
-    }
+  .btn:hover {
+    transform: scale(1.08);
+    background: linear-gradient(90deg, #ffafcc, #a2d2ff);
+  }
 
-    .quote p {
-      color: #555;
-      font-style: italic;
-      font-size: 15px;
-    }
-
-    .btn {
-      background-color: #f4a7b9;
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 20px;
-      cursor: pointer;
-      font-size: 14px;
-      margin-top: 15px;
-      transition: background-color 0.3s, transform 0.2s;
-    }
-
-    .btn:hover {
-      background-color: #f08a8a;
-      transform: scale(1.05);
-    }
-
-    footer {
-      margin-top: 20px;
-      font-size: 13px;
-      color: #777;
-      font-style: italic;
-    }
-  </style>
+  footer {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #777;
+    font-style: italic;
+  }
+</style>
 </head>
 <body>
-  <div class="card">
-    <div class="header">
-      <h1>Paul Fisher</h1>
-      <h2>Character from <em>Tangerine</em> by Edward Bloor</h2>
-    </div>
 
-    <img src="https://cdn.pixabay.com/photo/2020/12/11/18/29/boy-5824401_1280.png" alt="Paul Fisher" />
+<div class="card">
+  <h1>Paul Fisher</h1>
+  <h2>Character from <em>Tangerine</em> by Edward Bloor</h2>
 
-    <div class="info">
-      <p><strong>Full Name:</strong> Paul Fisher</p>
-      <p><strong>Age:</strong> 12 years old</p>
-      <p><strong>Lives in:</strong> Lake Windsor Downs, Florida</p>
-      <p><strong>Family:</strong> Lives with his parents and older brother Erik</p>
-      <p><strong>School:</strong> Tangerine Middle School</p>
-      <p><strong>Likes:</strong> Soccer, honesty, and helping friends</p>
-      <p><strong>Goal:</strong> To be brave and see the truth about his life</p>
-    </div>
+  <img src="https://i.pinimg.com/564x/7d/7c/1f/7d7c1f4f8f3e2af93d18834e216cfd54.jpg" alt="Paul Fisher">
 
-    <div class="quote">
-      <p>“I can see things other people can’t.”</p>
-    </div>
-
-    <button class="btn">About Paul 💫</button>
+  <div class="info">
+    <p><strong>Full Name:</strong> Paul Fisher</p>
+    <p><strong>Age:</strong> 12 years old</p>
+    <p><strong>Lives in:</strong> Lake Windsor Downs, Florida</p>
+    <p><strong>Family:</strong> Lives with his parents and older brother Erik</p>
+    <p><strong>School:</strong> Tangerine Middle School</p>
+    <p><strong>Likes:</strong> Soccer, honesty, and helping friends</p>
+    <p><strong>Goal:</strong> To be brave and see the truth about his life</p>
   </div>
 
-  <footer>
-    <p>Made with 💕 by Majo</p>
-  </footer>
+  <div class="quote">
+    “I can see things other people can’t.”
+  </div>
+
+  <button class="btn">About Paul ✨</button>
+
+  <footer>Made with 💕 by Majo</footer>
+</div>
+
 </body>
 </html>
